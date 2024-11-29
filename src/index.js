@@ -4,7 +4,7 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { ReactForm, MyForm ,Fn1,MultiInputForm,DynamicInputs} from './FormExample';
-
+import {FormSelection} from './FormExample';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <>
@@ -13,6 +13,7 @@ root.render(
   <Fn1/>
   <MultiInputForm/>
   <DynamicInputs/>
+  <FormSelection/>
   </>
   
 );

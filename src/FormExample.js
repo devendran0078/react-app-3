@@ -176,8 +176,36 @@ function MyForm() {
       </form>
     );
   }
+
+  function FormSelection()
+  {
+    const [ optionValue, setValue ] = useState("Op3")
+    const handleChange= (event)=>{
+        setValue(event.target.value);
+    }
+    const handleSubmit= (event)=>{
+        alert(optionValue);
+    }
+
+    return(
+        <>
+        <form onSubmit={handleSubmit}>
+            <label > Select a value&nbsp;&nbsp;&nbsp;   
+            <select value={optionValue} onChange={handleChange}> 
+                <option value="Op1">Option1</option>
+                <option value="Op2">Option2</option>
+                <option value="Op3">Option3</option>
+                <option value="Op4">Option4</option>
+
+            </select>
+            </label>
+            <input type="submit" value="Submit"/>
+        </form>
+        </>
+    )
+  }
   
   export  {DynamicInputs};
 
 
-    export {ReactForm, MyForm,Fn1,MultiInputForm}
+    export {ReactForm, MyForm,Fn1,MultiInputForm,  FormSelection}
