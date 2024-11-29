@@ -3,12 +3,18 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { ReactForm, MyForm ,Fn1,MultiInputForm,DynamicInputs} from './FormExample';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
+  <>
+  <ReactForm/>
+  <MyForm />
+  <Fn1/>
+  <MultiInputForm/>
+  <DynamicInputs/>
+  </>
+  
 );
 
 // If you want to start measuring performance in your app, pass a function
